@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.labgui.controller.LoginController">
+   <children>
+      <Text layoutX="254.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <TextField fx:id="loginUsernameTextField" layoutX="225.0" layoutY="146.0" promptText="username" />
+      <Button fx:id="buttonLogn" layoutX="224.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleLoginButton" prefHeight="26.0" prefWidth="150.0" text="Log in" />
+      <Text layoutX="226.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account? " wrappingWidth="128.8773193359375">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Hyperlink fx:id="signupHyperlink" layoutX="330.0" layoutY="318.0" onAction="#handleSignupHyperlink" text="Sign up" />
+      <PasswordField fx:id="loginPasswordTextField" layoutX="226.0" layoutY="188.0" promptText="password" />
+   </children>
+</AnchorPane>

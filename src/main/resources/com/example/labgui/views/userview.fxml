@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="376.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.labgui.controller.UserController">
+   <children>
+      <Button fx:id="addFriend" layoutX="448.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleAddFriend" prefHeight="26.0" prefWidth="98.0" text="Add Friend" />
+      <Button fx:id="removeFriend" layoutX="571.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleRemoveFriend" prefHeight="26.0" prefWidth="98.0" text="Remove Friend" />
+      <Button layoutX="448.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleFriendRequestsButton" prefHeight="31.0" prefWidth="98.0" text="Requests" />
+      <Button layoutX="448.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleFriendList" prefHeight="26.0" prefWidth="98.0" text="Friend List" />
+      <TextField fx:id="searchTextField" layoutX="41.0" layoutY="30.0" onKeyTyped="#handleSearchTextField" prefHeight="26.0" prefWidth="334.0" promptText="Search for user" />
+      <TableView fx:id="tableViewUser" layoutX="41.0" layoutY="75.0" prefHeight="277.0" prefWidth="334.0">
+        <columns>
+          <TableColumn fx:id="tableColumnUsername" prefWidth="96.79999542236328" text="Username" />
+            <TableColumn fx:id="tableColumnFriendsFrom" prefWidth="124.79998779296875" text="Friends From" />
+            <TableColumn fx:id="tableColumnStatus" prefWidth="110.4000244140625" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="acceptButton" layoutX="448.0" layoutY="326.0" mnemonicParsing="false" onAction="#handleAcceptButton" prefHeight="26.0" prefWidth="98.0" text="Accept" />
+      <Button fx:id="rejectButton" layoutX="571.0" layoutY="326.0" mnemonicParsing="false" onAction="#handleRejectButton" prefHeight="26.0" prefWidth="98.0" text="Reject" />
+      <Button layoutX="448.0" layoutY="31.0" mnemonicParsing="false" onAction="#handleAllUsersButton" prefHeight="26.0" prefWidth="98.0" text="All Users" />
+      <Button fx:id="undoButton" layoutX="448.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleUndoButton" prefHeight="26.0" prefWidth="98.0" text="Undo Request" />
+      <Button fx:id="buttonConversation" layoutX="448.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleOpenConversation" prefHeight="31.0" prefWidth="98.0" text="Open Conversation">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

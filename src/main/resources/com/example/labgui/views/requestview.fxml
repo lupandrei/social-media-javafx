@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="266.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.labgui.controller.RequestController">
+   <children>
+      <TableView fx:id="tableRequestsView" layoutX="54.0" layoutY="62.0" prefHeight="226.0" prefWidth="158.0">
+        <columns>
+          <TableColumn fx:id="tableRequestsColumn" prefWidth="157.60001220703126" text="Friend request from" />
+        </columns>
+      </TableView>
+      <Button fx:id="acceptButton" layoutX="54.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleAcceptButton" text="Accept" />
+      <Button fx:id="rejectButton" layoutX="163.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleRejectButton" text="Reject" />
+   </children>
+</AnchorPane>
